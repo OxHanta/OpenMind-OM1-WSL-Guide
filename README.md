@@ -47,17 +47,18 @@ uv venv
 1. Go to the [OpenMind Fabric Portal](https://portal.openmind.org/)
 2. Register with OpenMind or log in if you already have an account
 3. Click on **"Purchase Credits"** in the upper right menu
-4. Add **any amount** to your balance via the Base network (minimum is $5)
+4. Add **5 USDC or any amount** to your balance via the Base network 
 5. Click the **"Create API Key"** button to generate a new API key
 6. **Important:** Copy the generated key immediately, as you won't be able to see it again after closing the window
+<img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/b990788f-a5ff-4fb0-adb4-e94a4a000fde" />
+
 
 ### Adding Your API Key
 
 1. Locate the `config` folder in your project directory
-2. Open `/config/spot.json` (or your preferred config file)
+2. Open `/config/spot.json` (or your preferred config file) using your text editor
 3. Add your OpenMind API key to the configuration
-
-
+<img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/77df1e80-733f-490a-9c67-99dabb16d135" />
 
 > **Note:** Using the placeholder key `openmind_free` will generate errors. Always use your actual API key.
 
@@ -114,20 +115,9 @@ For additional logging information and easier debugging, add the `--debug` flag 
 python main.py --debug
 ```
 
-## Troubleshooting
-
-### Common Issues
-
-- **API Key Errors:** Ensure you're using your actual API key and not the placeholder `openmind_free`
-- **Dependencies Not Installing:** Make sure you have `sudo` privileges and an active internet connection
-- **Port 8000 Already in Use:** Check if another application is using port 8000 and stop it, or configure OM1 to use a different port
 
 ### Getting Help
 
 If you encounter issues not covered in this guide, please:
 - Check the [official documentation](https://portal.openmind.org/)
 - Open an issue on the [GitHub repository](https://github.com/OpenMind/OM1)
-
----
-
-**Happy Building with OM1! 🚀**
