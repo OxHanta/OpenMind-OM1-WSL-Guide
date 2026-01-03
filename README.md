@@ -9,10 +9,6 @@ It is written for users who:
 - Want to run OM1 **without robot hardware**
 - Want real microphone input in simulation
 
-This is **not an official OpenMind guide**.
-It documents a setup that worked reliably in practice.
-
----
 
 ## System Requirements
 
@@ -21,3 +17,12 @@ It documents a setup that worked reliably in practice.
 - Ubuntu 22.04 (recommended)
 - Microphone connected to host machine
 - OM API key
+
+---
+
+## Step 1: Install WSL2 and Ubuntu
+
+If WSL is not installed:
+
+```powershell
+wsl --install
