@@ -1,20 +1,6 @@
-# OM1 Setup Guide
+# Deploy Your First Robot on FABRIC Portal | WSL Guide
 
-A comprehensive step-by-step guide to setting up and configuring OM1.
-
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [API Key Configuration](#api-key-configuration)
-- [Bonus Features](#bonus-features)
-- [Troubleshooting](#troubleshooting)
-
-## Prerequisites
-
-Before you begin, ensure you have:
-- A Linux system with `sudo` privileges
-- Internet connection
-- Git installed
+<img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/f0f0ddb8-d64a-40da-b065-49fedf504fc7" />
 
 ## Installation
 
@@ -61,33 +47,17 @@ uv venv
 1. Go to the [OpenMind Fabric Portal](https://portal.openmind.org/)
 2. Register with OpenMind or log in if you already have an account
 3. Click on **"Purchase Credits"** in the upper right menu
-4. Add **5 USDC** to your balance via the Base network
+4. Add **any amount** to your balance via the Base network (minimum is $5)
 5. Click the **"Create API Key"** button to generate a new API key
 6. **Important:** Copy the generated key immediately, as you won't be able to see it again after closing the window
 
 ### Adding Your API Key
 
-You have two options to configure your API key:
-
-#### Option 1: Using the Config File
-
 1. Locate the `config` folder in your project directory
 2. Open `/config/spot.json` (or your preferred config file)
 3. Add your OpenMind API key to the configuration
 
-#### Option 2: Using Environment Variables
 
-1. Create a `.env` file in the project root directory:
-
-```bash
-touch .env
-```
-
-2. Add your API key to the `.env` file:
-
-```bash
-OM_API_KEY=om1_live_your_actual_key_here
-```
 
 > **Note:** Using the placeholder key `openmind_free` will generate errors. Always use your actual API key.
 
