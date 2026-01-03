@@ -62,6 +62,48 @@ uv venv
 
 > **Note:** Using the placeholder key `openmind_free` will generate errors. Always use your actual API key.
 
+## Mint Your Agent
+
+Before running your agent, you need to mint it on the blockchain.
+
+1. Go to the [My Devices Page](https://fabric.openmind.org/my-devices)
+2. Click on **"Mint Your Agent"**
+3. Choose any machine of your choice
+4. **Requirement:** You must have at least **0.001 ETH on mainnet** to be eligible for minting
+5. Complete the minting process
+<img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/6c34daec-2b91-4b32-9053-50fda0de0453" />
+
+## Running Your Agent
+
+Run the following command to start the Spot Agent:
+
+```bash
+uv run src/run.py spot
+```
+Monitor your agent's output in real-time using the WebSim interface.
+
+```
+http://localhost:8000
+```
+### Stopping the Agent
+
+To stop a running agent session, press:
+
+```
+Ctrl + C
+```
+
+This will gracefully terminate the agent process.
+
+### Switching Agent Configurations
+
+To run a different agent (for example, the conversation agent), specify the configuration name explicitly:
+
+```bash
+uv run src/run.py conversation
+```
+<img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/cd9ffd5e-b697-40e6-a685-f27beb52decc" />
+
 ## Bonus Features
 
 ### Interactive Agent with ASR and TTS
@@ -119,5 +161,5 @@ python main.py --debug
 ### Getting Help
 
 If you encounter issues not covered in this guide, please:
-- Check the [official documentation](https://portal.openmind.org/)
+- Check the [official documentation](https://docs.openmind.org/developing/0_introduction)
 - Open an issue on the [GitHub repository](https://github.com/OpenMind/OM1)
