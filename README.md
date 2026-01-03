@@ -4,7 +4,7 @@
 
 ## Installation
 
-### Step 1: Update System and Install Dependencies
+### 1: Update System and Install Dependencies
 
 Run the following command to update your system and install all required dependencies:
 
@@ -15,7 +15,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh && \
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
-### Step 2: Clone the Repository
+### 2: Clone the Repository
 
 Clone the OM1 repository and navigate into the project directory:
 
@@ -24,7 +24,7 @@ git clone https://github.com/OpenMind/OM1.git
 cd OM1
 ```
 
-### Step 3: Initialize Submodules
+### 3: Initialize Submodules
 
 Update and initialize the git submodules:
 
@@ -32,7 +32,7 @@ Update and initialize the git submodules:
 git submodule update --init
 ```
 
-### Step 4: Create Virtual Environment
+## Create Virtual Environment
 
 Create a virtual environment using `uv`:
 
@@ -40,9 +40,9 @@ Create a virtual environment using `uv`:
 uv venv
 ```
 
-## API Key Configuration
+### 4: API Key Configuration
 
-### Obtaining Your OM1 API Key
+## Obtaining Your OM1 API Key
 
 1. Go to the [OpenMind Fabric Portal](https://portal.openmind.org/)
 2. Register with OpenMind or log in if you already have an account
@@ -53,7 +53,7 @@ uv venv
 <img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/b990788f-a5ff-4fb0-adb4-e94a4a000fde" />
 
 
-### Adding Your API Key
+### 5: Adding Your API Key
 
 1. Locate the `config` folder in your project directory
 2. Open `/config/spot.json` (or your preferred config file) using your text editor
@@ -62,7 +62,7 @@ uv venv
 
 > **Note:** Using the placeholder key `openmind_free` will generate errors. Always use your actual API key.
 
-## Mint Your Agent
+### 6: Mint Your Agent
 
 Before running your agent, you need to mint it on the blockchain.
 
@@ -73,7 +73,7 @@ Before running your agent, you need to mint it on the blockchain.
 5. Complete the minting process
 <img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/6c34daec-2b91-4b32-9053-50fda0de0453" />
 
-## Running Your Agent
+### 7: Running Your Agent
 
 Run the following command to start the Spot Agent:
 
@@ -85,7 +85,7 @@ Monitor your agent's output in real-time using the WebSim interface.
 ```
 http://localhost:8000
 ```
-### Stopping the Agent
+## Stopping the Agent
 
 To stop a running agent session, press:
 
@@ -95,7 +95,7 @@ Ctrl + C
 
 This will gracefully terminate the agent process.
 
-### Switching Agent Configurations
+## Switching Agent Configurations
 
 To run a different agent (for example, the conversation agent), specify the configuration name explicitly:
 
@@ -103,6 +103,7 @@ To run a different agent (for example, the conversation agent), specify the conf
 uv run src/run.py conversation
 ```
 <img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/cd9ffd5e-b697-40e6-a685-f27beb52decc" />
+
 
 ## Bonus Features
 
@@ -146,17 +147,6 @@ Monitor your agent's input and output in real-time using the WebSim interface.
 ```
 http://localhost:8000
 ```
-
-3. View real-time logs along with input and output in the terminal
-
-#### Debug Mode
-
-For additional logging information and easier debugging, add the `--debug` flag when running your agent:
-
-```bash
-python main.py --debug
-```
-
 
 ### Getting Help
 
