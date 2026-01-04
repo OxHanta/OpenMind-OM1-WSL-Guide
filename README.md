@@ -58,7 +58,7 @@ uv venv
 1. Locate the `config` folder in your project directory
 2. Open `/config/spot.json` (or your preferred config file) using your text editor
 3. Add your OpenMind API key to the configuration
-<img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/77df1e80-733f-490a-9c67-99dabb16d135" />
+<img width="1200" height="732" alt="Image" src="https://github.com/user-attachments/assets/1e1a420a-a122-4091-a66e-66a2d3a93b55" />
 
 > **Note:** Using the placeholder key `openmind_free` will generate errors. Always use your actual API key.
 
